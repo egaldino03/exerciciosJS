@@ -10,11 +10,11 @@
 
  function soma(arr) {
   // Implemente sua solução aqui :)
-  let soma = 0;
-  for (let i = 0; i < arr.length; i++){
-    soma = arr[i] + soma;
-  }
-  return soma;
+  const total = arr.reduce((sum, num) => {
+    return sum + num;
+  })
+  return total;
 }
+
 /* Não modifique a linha abaixo */
 module.exports = soma
