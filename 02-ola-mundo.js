@@ -9,7 +9,7 @@
 
 function olaMundo(nome) {
   // Implemente sua solução aqui :)
-  return "Olá, ${nome}";
+  return `Olá, ${nome}`;
 }
 
 /* Não modifique a linha abaixo */

@@ -10,7 +10,11 @@
 
 function ordemAlfabetica(str) {
   // Implemente sua solução aqui :)
-  return str.split('').sort().join('');
+  if (typeof str == "string"){
+  return str.split('').sort().join('')
+  }else{
+    return "Não é possível converter";
+  }
 }
 /* Não modifique a linha abaixo */
 module.exports = ordemAlfabetica

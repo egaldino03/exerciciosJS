@@ -10,9 +10,9 @@
 function parOuImpar(num) {
   // Implemente sua solução aqui :)
   if(num % 2 == 0){
-    return "Par";
+    return "par";
   }else{
-    return "Ímpar";
+    return "ímpar";
   }
 }
 

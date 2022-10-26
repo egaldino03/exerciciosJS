@@ -9,6 +9,9 @@
 
 function removerDuplicada(arr) {
   // Implemente sua solução aqui :)
+  let final = arr.length;
+  let i = 0;
+  while(i < final){
   for (let i = 0; i < arr.length; i++){
     for (let j = i + 1; j < arr.length; j++){
       if (arr[i] == arr[j]){
@@ -16,6 +19,7 @@ function removerDuplicada(arr) {
       }
     }
   }
+}
   return arr;
 }
 

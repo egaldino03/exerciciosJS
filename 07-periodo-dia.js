@@ -11,21 +11,16 @@
  */
 function periodoDoDia(hour) {
   // Implemente sua solução aqui :)
-  switch (hour){
-    case 8 :
-      return "Manhã";
-      break;
-    case 12 :
-      return "Tarde";
-      break;
-    case 18 :
-      return "Noite";
-      break;
-    case 0 : 
-      return "Madrugada";
-      break;
-    default :
-      return "Horário Inválido";
+  if (hour >= 8 && hour < 12){
+    return "Manhã";
+  }else if (hour >= 12 && hour < 18){
+    return "Tarde";
+  }else if (hour >= 18 && hour <= 23){
+    return "Noite";
+  }else if (hour >= 0 && hour < 8){
+    return "Madrugada";
+  }else if (hour >= 24){
+    return "Horário inválido";
   }
 }
 
